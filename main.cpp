@@ -10,8 +10,8 @@ int main()
 	Stado x;
 	x.dajGlos();
 	Zwierze p1;
-	x+p1;
-	x.dajGlos();
+	x+Zwierze();
+	x.dajGlos(); //poebane
 
 	//Pies().dajGlos();				//Jakim cudem to działa?
 	//new Pies().dajGlos();	//A to nie?

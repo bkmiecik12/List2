@@ -1,4 +1,5 @@
 #include <iostream>
+//#include "Pies.h"
 
 using namespace std;
 
@@ -9,6 +10,6 @@ class Zwierze
 
 	Zwierze();
 	~Zwierze();
-	//void dajGlos();
+	void dajGlos();
 
 };

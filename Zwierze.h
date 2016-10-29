@@ -2,13 +2,13 @@
 
 using namespace std;
 
-class Pies
+class Zwierze
 {
 
 	public:
 
-	Pies();
-	~Pies();
-	void dajGlos();
+	Zwierze();
+	~Zwierze();
+	//void dajGlos();
 
 };

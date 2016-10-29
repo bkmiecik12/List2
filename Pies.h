@@ -1,8 +1,8 @@
 #include <iostream>
-
+#include "Zwierze.h"
 using namespace std;
 
-class Pies
+class Pies :public Zwierze
 {
 
 	public:

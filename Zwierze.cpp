@@ -1,11 +1,9 @@
 #include <iostream>
-#include "Pies.h"
+#include "Zwierze.h"
 
 using namespace std;
 
-Pies::Pies()
+Zwierze::Zwierze(){}
 
-void Pies::dajGlos()
-{
-	cout<<"Hau! ";
-}
+Zwierze::~Zwierze(){}
+

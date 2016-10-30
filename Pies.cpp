@@ -8,7 +8,7 @@ Pies::Pies(){}
 
 Pies::~Pies(){}
 
-void Zwierze::dajGlos()
+void Pies::dajGlos()
 {
 	cout<<"Hau! ";
 }

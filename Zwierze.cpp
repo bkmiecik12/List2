@@ -7,5 +7,5 @@ Zwierze::Zwierze(){}
 
 Zwierze::~Zwierze(){}
 
-//void Zwierze::dajGlos(){}
+//virtual void Zwierze::dajGlos(){}
 

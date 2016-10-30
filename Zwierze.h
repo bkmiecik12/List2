@@ -10,6 +10,6 @@ class Zwierze
 
 	Zwierze();
 	~Zwierze();
-	void dajGlos();
+	virtual void dajGlos()=0;
 
 };

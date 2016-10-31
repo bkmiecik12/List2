@@ -67,6 +67,10 @@ class Stado
 			i++;
 		}
 	}
+	void operator -(Stado z)
+	{
+		
+	}
 	
 };
 

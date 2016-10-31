@@ -49,7 +49,7 @@ class Stado
 		for(int i=0;i<z.s.size();i++)
 			s.push_back(z.s[i]);
 		
-		z.s.clear();
+		//z.s.clear();
 	}
 	void operator -(Zwierze* z)
 	{
@@ -76,13 +76,43 @@ class Stado
 
 int main()
 {
-	//Pies().daj_glos();
+	Pies().daj_glos();
+	cout<<endl;
+	
 	Stado x;
 	x.daj_glos();
+	
 	x+new Pies();
 	x+new Kot();
+	x.daj_glos();
+	cout<<endl;
+	
+	Stado y;
+	
+	y+new Pies();
+	y+new Pies();
+	y.daj_glos();
+	cout<<endl;
+	
+	x+y;
+	x.daj_glos();
+	cout<<endl;
+	
+	x+y;
+	x.daj_glos();
+	cout<<endl;
+	
 	x-new Pies();
 	x.daj_glos();
+	cout<<endl;
+	
+	x-new Kot();
+	x.daj_glos();
+	cout<<endl;
+	
+	x-new Kot();
+	x.daj_glos();
+	cout<<endl;
 	
 	return 0;
 }

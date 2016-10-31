@@ -69,7 +69,8 @@ class Stado
 	}
 	void operator -(Stado z)
 	{
-		
+		for(int i=0;i<z.s.size();i++)
+			operator-(z.s[i]);
 	}
 	
 };
@@ -110,7 +111,11 @@ int main()
 	x.daj_glos();
 	cout<<endl;
 	
-	x-new Kot();
+	x+new Kot();
+	x.daj_glos();
+	cout<<endl;
+	
+	x-y;
 	x.daj_glos();
 	cout<<endl;
 	

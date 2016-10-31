@@ -1,17 +1,17 @@
 #include <iostream>
 #include <vector>
+#include <typeinfo>
 using namespace std;
 
 class Zwierze
 {
 	public:
 	virtual void daj_glos()=0;
-	// operator+(Zwierze) ?????
 };
 
 class Pies :public Zwierze
 {
-	public:
+	public:	
 	void daj_glos()
 	{
 		cout<<"Hau! ";
@@ -20,7 +20,7 @@ class Pies :public Zwierze
 
 class Kot :public Zwierze
 {
-	public:
+	public:	
 	void daj_glos()
 	{
 		cout<<"Miau! ";
@@ -51,16 +51,33 @@ class Stado
 		
 		z.s.clear();
 	}
+	void operator -(Zwierze* z)
+	{
+		string s1=typeid(*z).name();
+		bool flaga=0;
+		int i=0;
+		while(i<s.size() && flaga==0)
+		{
+			string s2=typeid(*s[i]).name();
+			if(s1.compare(s2)==0) 
+			{
+				s.erase(s.begin()+i);
+				flaga=1;
+			}
+			i++;
+		}
+	}
 	
 };
 
 int main()
 {
-	Pies().daj_glos();
+	//Pies().daj_glos();
 	Stado x;
 	x.daj_glos();
 	x+new Pies();
 	x+new Kot();
+	x-new Pies();
 	x.daj_glos();
 	
 	return 0;
